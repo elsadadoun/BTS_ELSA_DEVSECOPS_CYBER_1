@@ -53,4 +53,7 @@ J’ai ajouté le fichier dans .gitignore et je l’ai retiré du suivi Git avec
 
 En revanche, j’ai conservé le fichier private-node.pem.pub car il contient uniquement la clé publique, qui n’est pas sensible et peut être partagée sans risque dans le cadre du TP.
 
+Lors de certains runs GitHub Actions, Gitleaks a affiché des avertissements liés aux services GitHub (erreur de cache / service temporairement indisponible). Il s’agit d’un incident côté plateforme et non d’un problème de configuration du workflow. Les scans restent correctement configurés dans le pipeline CI.
+
+Pour Snyk, le workflow CI est correctement configuré de mon côté ; le code de sortie 2 vient d’un problème technique lié à l’outil / au service externe, et pas d’une erreur dans mon code ou mon fichier YAML.
 
