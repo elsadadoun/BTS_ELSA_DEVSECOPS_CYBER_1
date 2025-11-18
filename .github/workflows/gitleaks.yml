@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run Gitleaks
-        uses: zricethezav/gitleaks-action@v2.14.0
+        uses: zricethezav/gitleaks-action@v2.3.2
