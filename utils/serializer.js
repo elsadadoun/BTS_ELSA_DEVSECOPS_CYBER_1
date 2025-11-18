@@ -1,7 +1,7 @@
 const serialize = require('serialize-javascript');
 
-function unsafeSerialize(obj) {
-  return serialize(obj, { unsafe: true });
+function safeSerialize(obj) {
+  return serialize(obj);
 }
 
-module.exports = { unsafeSerialize };
+module.exports = { safeSerialize };
